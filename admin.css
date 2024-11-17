@@ -3,7 +3,7 @@
   }
 
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 img {
@@ -23,15 +23,223 @@ p, h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-rows: 1fr 6fr;
     grid-template-columns: 1fr 6fr;
-    height: 150vh;
+    height: 100vh;
     width: 100%;
 }
 
 .header {
     height: 15vh;
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
     display: flex;
     flex-direction: column;
-    z-index: 1;
+}
+
+.header1 {
+    display: flex;
+    margin: 10px;
+    max-height: 20px;
+}
+
+input {
+    opacity: .5;
+    border-radius: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100%;
+}
+
+.search {
+    margin-left: 10px;
+    display: flex;
+    width: 50%;
+}
+
+.right1 {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.right1 img {
+    width: 30px;
+    height: 30px;
+}
+
+.header2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.left2 {
+    height: 10px;
+}
+
+.right2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    padding-top: 20px;
+}
+
+button {
+    border-radius: 30px;
+    height: 50%;
+    width: 80%;   
+}
+
+.sidebar {
+    display: grid;
+    background-color: #0284c7;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    color: #fff;
+}
+
+.sheader {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    grid-template-rows: 100px;
+    margin: 0px;
+}
+
+.webtitle {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.sheader img {
+    width: 100%;
+    height: 100%;
+}
+
+.top-tabs, .bottom-tabs {
+    display: grid;
+    grid-template-rows: repeat(9, 5%);
+    grid-template-columns: .20fr 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.top-tabs {
+    margin-top: 10px;
+}
+
+.bottom-tabs {
+    margin-top: 250px;
+}
+
+.main-content {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    height: 155svh;
+    column-gap: 20px;
+    row-gap: 10px;
+    background-color: #d3d3d3;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.card-container {
+    border-radius: 20px;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 100% 100%;
+    grid-template-rows: .5fr .5fr .5fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 55%;
+  }
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.card-container img {
+    width: 10%;
+    height: 10%;
+  }
+
+.card1-img, .card2-img, .card3-img, .card4-img, .card5-img, .card6-img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: right;
+    column-gap: 20px;
+  }
+
+.extra-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-end;
+    justify-content: right;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.extra-content h1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0px;
+    margin-right: 25px;
+}
+
+.events {
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+}
+
+.events div {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.caltasks {
+    background-color: #fff;
+    margin-top: 2px;
+    border-radius: 30px;
+    padding: 1px;
+}
+
+.caltasks h4 {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.caltasks p {
+    margin-bottom: 0px;
+}
+
+.task1, .task2, .task3, .task4 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: .25fr;
+}
+
+.task1 img, .task2 img, .task3 img, .task4 img {
+    width: 80%;
+    height: 80%;
+    padding-top: 15px;
 }
